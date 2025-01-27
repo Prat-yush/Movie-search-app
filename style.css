@@ -1,0 +1,183 @@
+/* General Layout Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1#title {
+    color: #2e9831;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+form > input {
+    padding: 12px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form > input:focus {
+    border-color: #2e9831;
+}
+
+form > button {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: #2e9831;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form > button:hover {
+    background-color: #248c27;
+}
+
+/* Results Section Styling */
+#resultDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.result-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: scale(1.05);
+}
+
+.result-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.result-card h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.result-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Loader Styling */
+.loader {
+    display: none;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2e9831;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Result Cards Styling */
+.result-card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+    transform: scale(1.05);
+}
+
+.result-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.result-card h3 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.result-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.view-wiki-btn {
+    padding: 10px 20px;
+    background-color: #2e9831;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-wiki-btn:hover {
+    background-color: #237a26;
+}
+
+.result-details {
+    margin-top: 10px;
+    width: 100%;
+}
+
