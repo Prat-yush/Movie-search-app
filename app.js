@@ -61,9 +61,9 @@ const makeResults = (data) => {
         name.textContent = result.attributes.slug;
         details.appendChild(name);
 
-        const description = document.createElement('p');
-        description.textContent = result.attributes.house || 'no house available';
-        details.appendChild(description);
+        const house = document.createElement('p');
+        house.textContent = result.attributes.house || 'no house available';
+        details.appendChild(house);
 
         card.appendChild(details);
 
@@ -80,6 +80,6 @@ const makeResults = (data) => {
         });
 
         // Append the card to the result div
-        resultDiv.appendChild(card);
+        resultDiv.append(card);
     });
 }
